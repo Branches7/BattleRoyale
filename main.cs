@@ -2,6 +2,11 @@ using System;
 
 class MainClass {
   public static void Main (string[] args) {
-    Lenda eu = new Lenda();
+    Jogador eu = new Jogador();
+
+    Console.Write("ID Jogador: ");
+    eu.j = Console.ReadLine();
+    Console.WriteLine("Nome inserido: {0}", eu.j);
+
   }
 }

@@ -1,7 +1,7 @@
 using System;
 
 class Jogador{
-  protected string idJogador;
+  public string idJogador;
   protected string nome;
   protected DateTime nascimento;
   protected int vitorias;

@@ -14,8 +14,6 @@ class Skins : Armas{
     nomeSArma = "Avalanche do Além";
     sArma = "M4A1";
     raridade = "Lendária";
-
-    Console.WriteLine("Construtor Skins definido: \nNome Skin Lenda: {0} \nLenda: {1} \nNome Skin Arma: {2} \nArma: {3} \nRaridade: {4}", nomeSLenda, sLenda, nomeSArma, sArma, raridade);
   }
   public Skins(string nomesL, string Slend, string nomesA, string Sarm, string rari)
   {

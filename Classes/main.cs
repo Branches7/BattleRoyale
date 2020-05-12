@@ -3,12 +3,19 @@ using System;
 class MainClass {
   public static void Main (string[] args) {
     Lenda eu = new Lenda();
-
-    Console.Write("ID Jogador: ");
+    
+    Console.WriteLine("-------- APEX LEGENS --------");
+    Console.WriteLine("SEJA BEM VINDO AO BATTLE ROYALE APEX LEGENS. ︻̷̷┻̿═━一 \nEscolha seu personagem. Monte sua classe. Reúna seu esquadrão. Mostre a todos do que as Lendas são capazes.");
+    Console.Write("Insira sua ID: ");
     eu.j = Console.ReadLine();
-    Console.WriteLine("Nome inserido: {0}", eu.j);
+    Console.Write("Nome: ");
+    eu.n = Console.ReadLine();
+
     Console.Write("Escolha sua lenda: ");
     eu.nomeL = Console.ReadLine();
-    Console.WriteLine("A lenda escolhida foi: {0}", eu.nomeL);
+    Console.Write("Escolha o level de sua armadura: ");
+    eu.tip = Console.ReadLine();
+  
+    Console.WriteLine(eu.Details());
   }
 }

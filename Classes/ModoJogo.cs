@@ -10,8 +10,6 @@ class ModoJogo : Skins{
     nomemodojogo = "Duos";
     qtdplayers = 100;
     mapa = "King Scanion";
-
-    Console.WriteLine("Construtor Modo de Jogo definido: \nNome do modo de jogo: {0} \nQuantidade de Players: {1} \nMapa: {2}", nomemodojogo, qtdplayers, mapa);
   }
 
   public ModoJogo(string nomemj, int qtdplay, string map)

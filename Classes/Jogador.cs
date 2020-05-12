@@ -15,8 +15,6 @@ class Jogador{
     vitorias = 600;
     eliminacoes = 2000;
     mortes = 1000;
-    
-    Console.WriteLine("Construtor definido: \nID Jogador: {0} \nNome: {1} \nVitórias: {2} \nEliminações: {3} \nMortes: {4}", idJogador, nome, vitorias, eliminacoes, mortes);
   }
   
   public Jogador(string j, string n, int vit, int eli, int mor)
@@ -31,12 +29,26 @@ class Jogador{
   
   public string j{
     get {return idJogador;}
-    set {idJogador = value;}
+    set {
+      if(j != null && j.Length > 1){
+        idJogador = value;
+      }
+      else{
+        Console.WriteLine("ID inválida");
+      }
+    }
   }
   
   public string n{
     get {return nome;}
-    set {nome = value;}
+    set {
+      if(n != null && n.Length > 1){
+        idJogador = value;
+      }
+      else{
+        Console.WriteLine("Nome inválido");
+      }
+    }
   }
   
   public static int getIdade(DateTime nascimento)

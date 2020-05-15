@@ -1,6 +1,6 @@
 using System;
 
-class ModoJogo : Skins{
+class ModoJogo : Armas{
   protected string nomemodojogo;
   protected int qtdplayers;
   protected string mapa;
@@ -17,7 +17,7 @@ class ModoJogo : Skins{
     nomemodojogo = nomemj;
     qtdplayers = qtdplay;
     mapa = map;
-
-    Console.WriteLine("Construtor Modo de Jogo não definido: \nNome do modo de jogo: {0} \nQuantidade de Players: {1} \nMapa: {2}", nomemodojogo, qtdplayers, mapa);
   }
+
+
 }

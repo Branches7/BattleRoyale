@@ -7,6 +7,7 @@ class Jogador{
   protected int vitorias;
   protected int eliminacoes;
   protected int mortes;
+  protected double mediakd;
   
   public Jogador()
   {
@@ -24,13 +25,12 @@ class Jogador{
     vitorias = vit;
     eliminacoes = eli;
     mortes = mor;
-    Console.WriteLine("Construtor não definido: \nID Jogador: {0} \nNome: {1} \nVitórias: {2} \nEliminações: {3} \nMortes: {4}", idJogador, nome, vitorias, eliminacoes, mortes);
   }
   
   public string j{
     get {return idJogador;}
     set {
-      if(j != null && j.Length > 1){
+      if(value != null && value.Length > 1){
         idJogador = value;
       }
       else{
@@ -42,8 +42,8 @@ class Jogador{
   public string n{
     get {return nome;}
     set {
-      if(n != null && n.Length > 1){
-        idJogador = value;
+      if(value != null && value.Length > 1){
+        nome = value;
       }
       else{
         Console.WriteLine("Nome inválido");
@@ -59,19 +59,24 @@ class Jogador{
     }
     return idade;
   }
-  
+
+  //Número de vitorias, eliminações e mortes serão informados pelo próprio jogador 
   public int vit{
     get {return vitorias;}
     set {vitorias = value;}
   }
-
   public int eli{
     get {return eliminacoes;}
     set {eliminacoes = value;}
   }
-
   public int mor{
     get {return mortes;}
     set {mortes = value;}
+  }
+  public double kd{
+    get {return mediakd;}
+    set {
+      mediakd = value / mortes;
+    }
   }
 }

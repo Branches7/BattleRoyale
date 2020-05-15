@@ -15,7 +15,13 @@ class MainClass {
     eu.nomeL = Console.ReadLine();
     Console.Write("Escolha o level de sua armadura: ");
     eu.tip = Console.ReadLine();
-  
-    Console.WriteLine(eu.Details());
+
+    Console.Write("Insira suas vitorias, eliminações e mortes: ");
+    eu.vit = int.Parse(Console.ReadLine());
+    eu.eli = int.Parse(Console.ReadLine());
+    eu.mor = int.Parse(Console.ReadLine());
+    Console.WriteLine("O seu KD é: {0}", eu.kd);
+
+    Console.WriteLine(eu.DetailLend());
   }
 }

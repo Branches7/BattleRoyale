@@ -1,27 +1,39 @@
+
 using System;
 
 class MainClass {
   public static void Main (string[] args) {
-    Lenda eu = new Lenda();
-    
-    Console.WriteLine("-------- APEX LEGENS --------");
-    Console.WriteLine("SEJA BEM VINDO AO BATTLE ROYALE APEX LEGENS. ︻̷̷┻̿═━一 \nEscolha seu personagem. Monte sua classe. Reúna seu esquadrão. Mostre a todos do que as Lendas são capazes.");
+    ModoJogo eu = new ModoJogo();
+    // Apresentação do jogo
+    eu.menu();
+
+    // Jogador
     Console.Write("Insira sua ID: ");
     eu.j = Console.ReadLine();
     Console.Write("Nome: ");
     eu.n = Console.ReadLine();
 
-    Console.Write("Escolha sua lenda: ");
-    eu.nomeL = Console.ReadLine();
-    Console.Write("Escolha o level de sua armadura: ");
+    //-- Escolha da Lenda
+
+    Console.WriteLine();
+    eu.escolhalenda();
+    eu.LendaEscolha();
+    Console.Write("Escolha qual será o level de sua armadura: ");
     eu.tip = Console.ReadLine();
+    
+    // Escolha da Classe de arma
+    eu.escolhaclasse();
+    eu.ClasseEscolha();
 
-    Console.Write("Insira suas vitorias, eliminações e mortes: ");
-    eu.vit = int.Parse(Console.ReadLine());
-    eu.eli = int.Parse(Console.ReadLine());
-    eu.mor = int.Parse(Console.ReadLine());
-    Console.WriteLine("O seu KD é: {0}", eu.kd);
+    // Resultado de todas as escolhas
 
-    Console.WriteLine(eu.DetailLend());
+    Console.WriteLine();
+    eu.resultadofinal();
+    Console.WriteLine();
+    eu.classescolhida();
+
+    Console.WriteLine();
+    eu.historicokd();
+    Console.WriteLine("\nObrigado por jogar!!!");
   }
 }

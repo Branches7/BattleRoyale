@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 
 class Lenda : Jogador{
   protected string nomeLenda;
@@ -116,8 +117,38 @@ class Lenda : Jogador{
       }
     }
   }
-  public string DetailLend()
-    {
-        return "----- Lenda escolhida e seus atributos -----\nNome: " + nomeLenda + "\nIdade: " + idade.ToString() + "\nHabilidade Tática: " + habilidadeTatica + "\nHabilidade Passiva: " + habilidadePassiva + "\nHabilidade Ultimate: " + ultimate + "\nBody Shield: " + tipoArmadura;
-    } 
+
+  public void LendaEscolha(){ 
+
+    Console.WriteLine("\n---- Escolha sua Lenda ----\n ");
+
+    Console.Write("Lenda: ");
+    nomeL = Console.ReadLine();
+    if(nomeL == "Octane"){
+      idade = 24;
+      habilidadeTatica = "Estimulante";
+      habilidadePassiva = "Reparo Rápido";
+      ultimate = "Suporte de Salto";
+    }
+    else if(nomeLenda == "Mirage"){
+      idade = 30;
+      habilidadeTatica = "Astúcia";
+      habilidadePassiva = "Bis";
+      ultimate = "Desaparecer";
+    }
+    else if(nomeLenda == "Wraith"){
+      idade = 32;
+      habilidadeTatica = "Adentrando o Vazio";
+      habilidadePassiva = "Vozes do Vazio";
+      ultimate = "Fenda Dimensional";
+    }
+    else if(nomeLenda == "Pathfinder"){
+      idade = 100;
+      habilidadeTatica = "Gancho com Garras";
+      habilidadePassiva = "Fontes Internas";
+      ultimate = "Arma de Tirolesa";
+    }
+        
+    File.WriteAllText("LendaEscolhida.txt", "Jogador: "+ idJogador +"\nNome do jogador: " + nome +  "\n**Lenda Escolhida por "+ idJogador +"**\nLenda: " +nomeL + "\nIdade: " +idade + "\nHabilidade Tática: "+habilidadeTatica +"\nHabilidade Passiva: " +habilidadePassiva + "\nHabilidade Ultimate: " + ultimate);
+  } 
 }

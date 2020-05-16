@@ -1,0 +1,42 @@
+Agora você escolherá sua classe, dentre as opções disponibilizadas.
+
+==== Armas ==== (=ﾟДﾟ=) ▄︻┻┳━ ·.`.`.`.
+
+Arma = M4A1
+dano = 44;
+alcance = 40
+cadencia = 65
+precisao = 50
+capacidadePente = 30
+mira = Mira Holográfica
+
+Arma = Kreble
+dano = 150
+alcance = 100
+cadencia = 89
+precisao = 95
+mira = Mira Longo alcance 5x
+
+Arma = R99
+dano = 32;
+alcance = 25;
+cadencia = 22
+precisao = 23;
+capacidadePente = 30
+mira = Mira do pontinho
+
+Arma = Peacekeeper
+dano = 100
+alcance = 12
+cadencia = 50
+precisao = 60
+capacidadePente = 6
+mira = No scope
+
+Arma = G7 Scout
+dano = 52
+alcance = 60
+cadencia = 72
+precisao = 80
+capacidadePente = 22
+mira = Mira Médio alcance 2x

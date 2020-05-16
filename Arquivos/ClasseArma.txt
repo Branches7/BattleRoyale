@@ -1,0 +1,8 @@
+****Arma escolhida e seus atributos**** 
+Arma: Peacekeeper
+dano: 100
+Alcance: 12
+Cadência: 50
+Precisão: 60
+Capacidade do pente: 6
+Mira: No scope

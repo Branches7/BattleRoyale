@@ -1,0 +1,26 @@
+==== As Lendas de Apex Legens ====
+Escolha a sua !!
+
+Lenda = Octane
+idade = 24
+habilidadeTatica = Estimulante
+habilidadePassiva = Reparo Rápido
+ultimate = Suporte de Salto
+
+Lenda = Mirage
+idade = 30
+habilidadeTatica = Astúcia
+habilidadePassiva = Bis
+ultimate = Desaparecer
+
+Lenda = Wraith
+idade = 32
+habilidadeTatica = Adentrando o Vazio
+habilidadePassiva = Vozes do Vazio
+ultimate = Fenda Dimensional
+
+Lenda = Pathfinder
+idade = 100
+habilidadeTatica = Gancho com Garras
+habilidadePassiva = Fontes Internas
+ultimate = Arma de Tirolesa

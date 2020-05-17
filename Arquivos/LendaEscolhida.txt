@@ -1,8 +1,9 @@
 Jogador: xBranches
 Nome do jogador: Daniel Branches
 **Lenda Escolhida por xBranches**
-Lenda: Mirage
-Idade: 30
-Habilidade Tática: Astúcia
-Habilidade Passiva: Bis
-Habilidade Ultimate: Desaparecer
+Lenda: octane
+Idade: 24
+Habilidade Tática: Estimulante
+Habilidade Passiva: Reparo Rápido
+Habilidade Ultimate: Suporte de Salto
+Armadura Escolhida: Level 1(Cura Rápida)

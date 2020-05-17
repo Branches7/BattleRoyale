@@ -1,0 +1,11 @@
+MODOS DE JOGO
+
+1 - Solo 
+2 - Duos
+3 - Trios
+
+MAPAS
+
+1 - King Scanion
+2 - World's Edge
+

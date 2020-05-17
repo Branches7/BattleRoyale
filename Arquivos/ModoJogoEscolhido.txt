@@ -1,0 +1,3 @@
+==== Modo De Jogo e Mapa ==== 
+Modo de jogo escolhido: Duos
+Mapa escolhido: King Scanion

@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 
 class ModoJogo : Armas{
   protected string nomemodojogo;
@@ -33,11 +34,30 @@ class ModoJogo : Armas{
     set {mapa = value;}
   }
 
-  public void escolhaModojogo(){
+  public void escolhaModoJogo(){
     Console.WriteLine("=== Escolha seu modo de jogo e mapa ===");
     Console.WriteLine("Modo de Jogo:");
     nomemj = Console.ReadLine();
+    if(nomemj == "1" || nomemj == "solo"){
+      nomemj = "Solo";
+    }
+    else if(nomemj == "2" || nomemj == "duos"){
+      nomemj = "Duos";
+    }
+    else if(nomemj == "3" || nomemj == "trios"){
+      nomemj = "Trios";
+    }
+    
+    
     Console.WriteLine("Escolha o mapa: ");
     map = Console.ReadLine();
+    if(map == "1" || map == "king scanion"){
+      map = "King Scanion";
+    }
+    else if(map == "2" || map == "worlds edge"){
+      map = "World's' Edge";
+    }
+
+    File.WriteAllText("ModoJogoEscolhido.txt", "==== Modo De Jogo e Mapa ==== \nModo de jogo escolhido: " + nomemj + "\nMapa escolhido: " + map);
   }
 }

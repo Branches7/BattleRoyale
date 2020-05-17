@@ -1,5 +1,5 @@
-
 using System;
+using System.IO;
 
 class MainClass {
   public static void Main (string[] args) {
@@ -18,12 +18,17 @@ class MainClass {
     Console.WriteLine();
     eu.escolhalenda();
     eu.LendaEscolha();
-    Console.Write("Escolha qual será o level de sua armadura: ");
-    eu.tip = Console.ReadLine();
     
     // Escolha da Classe de arma
     eu.escolhaclasse();
     eu.ClasseEscolha();
+    Console.WriteLine();
+
+    // Escolha Modo de jogo e mapa
+
+    eu.modojogoescolha();
+    eu.escolhaModoJogo();
+
 
     // Resultado de todas as escolhas
 
@@ -31,6 +36,8 @@ class MainClass {
     eu.resultadofinal();
     Console.WriteLine();
     eu.classescolhida();
+    Console.WriteLine();
+    eu.modoescolhido();
 
     Console.WriteLine();
     eu.historicokd();

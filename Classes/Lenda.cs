@@ -50,72 +50,12 @@ class Lenda : Jogador{
 
   public string nomeL{
     get {return nomeLenda;}
-    set {
-      switch (value){
-        case "Octane":
-        nomeLenda = "Octane";
-        idade = 24;
-        habilidadeTatica = "Estimulante";
-        habilidadePassiva = "Reparo Rápido";
-        ultimate = "Suporte de Salto";
-        break;
-
-        case "Mirage":
-        nomeLenda = "Mirage";
-        idade = 30;
-        habilidadeTatica = "Astúcia";
-        habilidadePassiva = "Bis";
-        ultimate = "Desaparecer";
-        break;
-
-        case "Wraith":
-        nomeLenda = "Wraith";
-        idade = 32;
-        habilidadeTatica = "Adentrando o Vazio";
-        habilidadePassiva = "Vozes do Vazio";
-        ultimate = "Fenda Dimensional";
-        break;
-
-        case "Pathfinder":
-        nomeLenda = "Pathfinder";
-        break;
-
-        default:
-        Console.WriteLine("Insira uma lenda válida");
-        break;
-      }
-    }
+    set {nomeLenda = value;}
   }
 
   public string tip{
     get {return tipoArmadura;}
-    set {
-      switch (value){
-        case "1":
-        tipoArmadura = "Level 1";
-        break;
-
-        case "2":
-        tipoArmadura = "Level 2";
-        break;
-
-        case "3":
-        tipoArmadura = "Level 3";
-        break;
-
-        case "4":
-        tipoArmadura = "Level 4";
-        break;
-
-        case "Evo":
-        tipoArmadura = "Evo Shield";
-        break;
-
-        default:
-        Console.WriteLine("Insira uma armadura válida");
-        break;
-      }
-    }
+    set {tipoArmadura = value;}
   }
 
   public void LendaEscolha(){ 
@@ -124,31 +64,49 @@ class Lenda : Jogador{
 
     Console.Write("Lenda: ");
     nomeL = Console.ReadLine();
-    if(nomeL == "Octane"){
+    if(nomeL == "Octane" || nomeL == "octane"){
       idade = 24;
       habilidadeTatica = "Estimulante";
       habilidadePassiva = "Reparo Rápido";
       ultimate = "Suporte de Salto";
     }
-    else if(nomeLenda == "Mirage"){
+    else if(nomeL == "Mirage" || nomeL == "mirage"){
       idade = 30;
       habilidadeTatica = "Astúcia";
       habilidadePassiva = "Bis";
       ultimate = "Desaparecer";
     }
-    else if(nomeLenda == "Wraith"){
+    else if(nomeL == "Wraith" || nomeL == "wraith"){
       idade = 32;
       habilidadeTatica = "Adentrando o Vazio";
       habilidadePassiva = "Vozes do Vazio";
       ultimate = "Fenda Dimensional";
     }
-    else if(nomeLenda == "Pathfinder"){
+    else if(nomeL == "Pathfinder" || nomeL == "pathfinder"){
       idade = 100;
       habilidadeTatica = "Gancho com Garras";
       habilidadePassiva = "Fontes Internas";
       ultimate = "Arma de Tirolesa";
     }
-        
-    File.WriteAllText("LendaEscolhida.txt", "Jogador: "+ idJogador +"\nNome do jogador: " + nome +  "\n**Lenda Escolhida por "+ idJogador +"**\nLenda: " +nomeL + "\nIdade: " +idade + "\nHabilidade Tática: "+habilidadeTatica +"\nHabilidade Passiva: " +habilidadePassiva + "\nHabilidade Ultimate: " + ultimate);
+    Console.WriteLine();
+    Console.WriteLine("=== Armaduras ===\n");
+    Console.WriteLine("1 - Level 1(Cura Rápida)\n2 - Level 2(Absorve mais dano)\n3 - Level 3(Cura sozinho desde que esteja fora de combate)\n4 - Evo Shield(Evolui a proteção a cada dano que causar durante a partida)");
+    Console.Write("Escolha qual será o level de sua armadura: ");
+    tip = Console.ReadLine();
+
+    if(tip == "1" || tip == "Level 1"){
+      tip = "Level 1(Cura Rápida)";
+    }
+    else if (tip == "2" || tip == "Level 2"){
+      tip = "Level 2(Absorve mais dano)";
+    }
+    else if (tip == "3" || tip == "Level 3"){
+      tip = "Level 3(Cura sozinho desde que esteja fora de combate)";
+    }
+    else if (tip == "4" || tip == "Evo Shield"){
+      tip = "Evo Shield(Evolui a proteção a cada dano que causar durante a partida)";
+    }
+
+    File.WriteAllText("LendaEscolhida.txt", "Jogador: "+ idJogador +"\nNome do jogador: " + nome +  "\n**Lenda Escolhida por "+ idJogador +"**\nLenda: " +nomeL + "\nIdade: " +idade + "\nHabilidade Tática: "+habilidadeTatica +"\nHabilidade Passiva: " +habilidadePassiva + "\nHabilidade Ultimate: " + ultimate + "\nArmadura Escolhida: "+ tip);
   } 
 }

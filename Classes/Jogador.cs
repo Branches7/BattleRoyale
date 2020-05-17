@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 
 class Jogador : Menu{
   protected string idJogador;

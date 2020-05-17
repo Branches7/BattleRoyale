@@ -21,8 +21,19 @@ class Menu{
     string[] lines = File.ReadAllLines("LendaEscolhida.txt");
       foreach(var line in lines) Console.WriteLine(line);
   }
+
   public void classescolhida(){ // Print com todas as escolhas
     string[] lines = File.ReadAllLines("ClasseArma.txt");
+      foreach(var line in lines) Console.WriteLine(line);
+  }
+
+  public void modojogoescolha(){ // Opções de escolha do modo de jogo
+    string[] lines = File.ReadAllLines("modojogo.txt");
+      foreach(var line in lines) Console.WriteLine(line);
+  }
+
+  public void modoescolhido(){ // Print com as escolhas de modo de jogo
+    string[] lines = File.ReadAllLines("ModoJogoEscolhido.txt");
       foreach(var line in lines) Console.WriteLine(line);
   }
 }

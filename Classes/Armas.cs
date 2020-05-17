@@ -70,7 +70,7 @@ class Armas : Lenda{
 
     Console.Write("Qual será sua escolha?: ");
     arma = Console.ReadLine();
-    if(arma == "M4A1"){
+    if(arma == "1" || arma == "M4A1"){
       dano = 44;
       alcance = 40;
       cadencia = 65;
@@ -78,7 +78,7 @@ class Armas : Lenda{
       capacidadePente = 30;
       mira = "Mira Holográfica";
     }
-    else if(arma == "Krebler"){
+    else if(arma == "2" || arma == "Krebler"){
       dano = 150;
       alcance = 100;
       cadencia = 89;
@@ -86,7 +86,7 @@ class Armas : Lenda{
       capacidadePente = 12;
       mira = "Mira Longo alcance 5x";
     }
-    else if(arma == "R99"){
+    else if(arma == "3" || arma == "R99"){
       dano = 32;
       alcance = 25;
       cadencia = 22;
@@ -94,7 +94,7 @@ class Armas : Lenda{
       capacidadePente = 30;
       mira = "Mira do pontinho";
     }
-    else if(arma == "Peacekeeper"){
+    else if(arma == "4" || arma == "Peacekeeper"){
       dano = 100;
       alcance = 12;
       cadencia = 50;
@@ -102,7 +102,7 @@ class Armas : Lenda{
       capacidadePente = 6;
       mira = "No scope";
     }
-    else if(arma == "G7 Scout"){
+    else if(arma == "5" || arma == "G7 Scout"){
       dano = 52;
       alcance = 60;
       cadencia = 72;
